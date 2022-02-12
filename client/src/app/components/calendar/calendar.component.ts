@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 const MAP_MONTH = new Map<number, string>([
   [1, 'January'],
@@ -40,6 +40,7 @@ export class CalendarComponent implements OnInit {
   days: any;
   mealLists: any[];
   subMenuState: boolean = false;
+  @Output() openSidebar = new EventEmitter();
   constructor() {
     this.mealLists = MEAL_LIST;
     this.days = [
@@ -89,7 +90,9 @@ export class CalendarComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
   burgerClicked(evnt) {
+    this.openSidebar.emit(evnt);
     this.subMenuState = evnt;
     console.log(
       'inside burgerClicked: pls. change showMenu to be:',

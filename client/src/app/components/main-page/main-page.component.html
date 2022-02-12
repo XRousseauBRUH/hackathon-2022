@@ -1,3 +1,6 @@
 <body>
-  <div class="centered"><app-calendar></app-calendar></div>
+  <app-sidebar [subMenuState]="openIt"></app-sidebar>
+  <div class="centered">
+    <app-calendar (openSidebar)="openSide($event)"></app-calendar>
+  </div>
 </body>
