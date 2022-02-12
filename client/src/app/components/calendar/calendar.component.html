@@ -1,27 +1,28 @@
 <body>
   <div class="horizontal">
-    <ng-container [value]="days" *ngFor="let day of days">
+    <ng-container [value]="days" *ngFor="let today of days">
       <div class="vertical">
         <mat-card class="day">
-          <mat-card-title>{{ day.day }}</mat-card-title>
+          <mat-card-title>{{ today.day }}</mat-card-title>
           <!-- <mat-card-title>{{ day.month }}</mat-card-title>
           <mat-card-title>{{ day.year }}</mat-card-title> -->
-          <mat-card-title>{{ day.nbDayInWeek }}</mat-card-title>
+          <mat-card-title>{{ today.nbDayInWeek }}</mat-card-title>
         </mat-card>
         <div class="meal-container2">
           <div
             class="meal-container"
-            [value]="mealLists"
-            *ngFor="let meal of mealLists"
+            [value]="today.meal"
+            *ngFor="let mealeeee of today.meal[0]"
           >
             <app-meal-slot
               (menuState)="burgerClicked($event)"
-              [meal]="meal.name"
-            ></app-meal-slot>
+              [fullMeal]="mealeeee"
+              [presentDay]="today.nbDayInWeek"
+            >
+            </app-meal-slot>
           </div>
         </div>
       </div>
     </ng-container>
   </div>
 </body>
-<!-- <app-sidebar [subMenuState]="subMenuState"></app-sidebar> -->

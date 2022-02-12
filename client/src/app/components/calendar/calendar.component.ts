@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { AddMealService } from 'src/app/services/add-meal.service';
 
 const MAP_MONTH = new Map<number, string>([
   [1, 'January'],
@@ -41,50 +42,59 @@ export class CalendarComponent implements OnInit {
   mealLists: any[];
   subMenuState: boolean = false;
   @Output() openSidebar = new EventEmitter();
-  constructor() {
-    this.mealLists = MEAL_LIST;
+
+  constructor(private AddMealService: AddMealService) {
+    this.mealLists = this.AddMealService.getWeek();
+    this.mealLists = this.mealLists[0];
     this.days = [
       {
         year: checkDate(0)[2].toString(),
         month: MAP_MONTH.get(checkDate(0)[1]),
         day: checkDate(0)[0].toString(),
         nbDayInWeek: MAP_DAY.get(d.getDay() % 7),
+        meal: Array.of(this.mealLists[d.getDay() % 7].meals),
       },
       {
         year: checkDate(1)[2].toString(),
         month: MAP_MONTH.get(checkDate(1)[1]),
         day: checkDate(1)[0].toString(),
         nbDayInWeek: MAP_DAY.get((d.getDay() + 1) % 7),
+        meal: Array.of(this.mealLists[(d.getDay() + 1) % 7].meals),
       },
       {
         year: checkDate(2)[2].toString(),
         month: MAP_MONTH.get(checkDate(2)[1]),
         day: checkDate(2)[0].toString(),
         nbDayInWeek: MAP_DAY.get((d.getDay() + 2) % 7),
+        meal: Array.of(this.mealLists[(d.getDay() + 2) % 7].meals),
       },
       {
         year: checkDate(3)[2].toString(),
         month: MAP_MONTH.get(checkDate(3)[1]),
         day: checkDate(3)[0].toString(),
         nbDayInWeek: MAP_DAY.get((d.getDay() + 3) % 7),
+        meal: Array.of(this.mealLists[(d.getDay() + 3) % 7].meals),
       },
       {
         year: checkDate(4)[2].toString(),
         month: MAP_MONTH.get(checkDate(4)[1]),
         day: checkDate(4)[0].toString(),
         nbDayInWeek: MAP_DAY.get((d.getDay() + 4) % 7),
+        meal: Array.of(this.mealLists[(d.getDay() + 4) % 7].meals),
       },
       {
         year: checkDate(5)[2].toString(),
         month: MAP_MONTH.get(checkDate(5)[1]),
         day: checkDate(5)[0].toString(),
         nbDayInWeek: MAP_DAY.get((d.getDay() + 5) % 7),
+        meal: Array.of(this.mealLists[(d.getDay() + 5) % 7].meals),
       },
       {
         year: checkDate(6)[2].toString(),
         month: MAP_MONTH.get(checkDate(6)[1]),
         day: checkDate(6)[0].toString(),
         nbDayInWeek: MAP_DAY.get((d.getDay() + 6) % 7),
+        meal: Array.of(this.mealLists[(d.getDay() + 6) % 7].meals),
       },
     ];
   }
