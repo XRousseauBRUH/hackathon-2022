@@ -7,9 +7,12 @@
         <mat-card-title>{{ day.year }}</mat-card-title>
         <mat-card-title>{{ day.nbDayInWeek }}</mat-card-title>
         <div [value]="mealLists" *ngFor="let meal of mealLists">
-          <app-meal-slot [meal]="meal.name"></app-meal-slot>
+          <app-meal-slot (menuState)='burgerClicked($event)' [meal]="meal.name"></app-meal-slot>
         </div>
       </mat-card>
     </ng-container>
   </div>
 </body>
+
+
+<app-sidebar [subMenuState]="subMenuState"></app-sidebar>

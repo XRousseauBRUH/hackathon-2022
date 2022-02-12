@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { SidenavService } from 'src/app/services/sidenav.service';
 import { ReceipeDialogComponent } from '../receipe-dialog/receipe-dialog.component';
 
 @Component({
@@ -8,10 +9,12 @@ import { ReceipeDialogComponent } from '../receipe-dialog/receipe-dialog.compone
   styleUrls: ['./meal-slot.component.css']
 })
 export class MealSlotComponent implements OnInit {
+  @Output() menuState = new EventEmitter();
   meal: String = null
   type: String = null
   action: String = null
-  addMeal: Boolean = null
+  addMeal: boolean = null
+  showMenu: boolean = false
 
   constructor(public dialog: MatDialog) { }
 
@@ -33,7 +36,8 @@ export class MealSlotComponent implements OnInit {
   }
 
   public add(){
-    //Call service to process the request
+    this.showMenu = true
+    this.menuState.emit(this.showMenu)
     this.meal = "lasagne"
     this.type = "dinner"
     this.addMeal = false

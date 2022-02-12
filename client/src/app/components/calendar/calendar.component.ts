@@ -35,6 +35,7 @@ const MEAL_LIST = [{name: "lasagne", image: "lasagne.jpg", data: "datalasagne"},
 export class CalendarComponent implements OnInit {
   days: any;
   mealLists: any[];
+  subMenuState:boolean = false;
   constructor() {
     this.mealLists = MEAL_LIST;
     this.days = [{ year: checkDate(0)[2].toString(), month: MAP_MONTH.get(checkDate(0)[1]), day: checkDate(0)[0].toString(), nbDayInWeek: MAP_DAY.get((d.getDay())%7) },
@@ -47,7 +48,11 @@ export class CalendarComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-  
+  burgerClicked(evnt){
+    
+    this.subMenuState = evnt;
+    console.log("inside burgerClicked: pls. change showMenu to be:",this.subMenuState);
+  }
 
 }
 

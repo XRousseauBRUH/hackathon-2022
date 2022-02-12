@@ -1,1 +1,12 @@
-<p>sidebar works!</p>
+<mat-sidenav-container >
+    <mat-sidenav  #sidenav mode="over" opened="true" [fixedInViewport]="true" [fixedTopGap]="75" *ngIf="showMenu" mat-disable-backdrop #start >
+        <mat-form-field  appearance="fill">
+            <mat-label>Search meal</mat-label>
+            <input matInput [(ngModel)]="request">
+            <button mat-icon-button (click)="onSubmit()">
+                <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+    </mat-sidenav>
+
+</mat-sidenav-container>
