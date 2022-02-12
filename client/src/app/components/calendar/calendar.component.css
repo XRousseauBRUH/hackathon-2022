@@ -1,27 +1,58 @@
 .day {
+  display: table;
   margin: auto;
-  width: 10%;
-  height: 80%;
+  padding-right: 20%;
+  padding-left: 20%;
+  width: auto;
   text-align: center;
-  border-radius: 3%;
+  border-radius: 10%;
   border: 5px solid;
-  border-color: blue;
+  border-color: teal;
+  position: relative;
+}
+
+.meal-container {
+  margin: auto;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  position: relative;
+  text-align: center;
+  border-radius: 10%;
+  border: 5px solid;
+  border-color: teal;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.meal-container2 {
+  display: table;
+  height: auto;
+  table-layout: fixed;
+  position: relative;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  border-radius: 10%;
+  /* border: 5px solid;
+  border-color: teal; */
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .horizontal {
   display: flex;
-  width: 100%;
+  width: auto;
   margin: auto;
   flex-wrap: wrap;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 
-body{
-  background-image: url("https://www.circulaire-en-ligne.ca//wp-content/uploads/lasagnes-a-la-bolognaise-facile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.vertical {
+  width: 14.2857%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  flex-wrap: wrap;
+  position: relative;
 }

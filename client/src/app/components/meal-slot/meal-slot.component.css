@@ -1,12 +1,13 @@
- .calendar-card {
-    max-width: 100px;
-} 
-
-.button {
-    font-size: 9px;
-    line-height: 20px;
+.calendar-card {
+  height: auto;
+  width: auto;
 }
 
-.subtitle{
-    text-align: left;
+.button {
+  font-size: 9px;
+  line-height: 20px;
+}
+
+.subtitle {
+  text-align: center;
 }

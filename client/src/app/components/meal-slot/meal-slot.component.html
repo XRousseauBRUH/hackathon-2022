@@ -1,13 +1,26 @@
 <mat-card class="calendar-card">
-    <mat-card-header (click)="display()">
-      <mat-card-title>{{meal}}</mat-card-title>
-      <mat-card-subtitle class="subtitle">{{type}}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-actions>
-        <button mat-raised-button *ngIf="!this.addMeal" (click)="delete()" class="button" color="primary">Delete</button>
-        <button mat-raised-button *ngIf="this.addMeal" (click)="add()" class="button" color="primary">Add</button>
-    </mat-card-actions>
-  </mat-card>
-
-
-  
+  <mat-card-header (click)="display()">
+    <mat-card-title>{{ meal }}</mat-card-title>
+    <mat-card-subtitle class="subtitle">{{ type }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+    <button
+      mat-raised-button
+      *ngIf="!this.addMeal"
+      (click)="delete()"
+      class="button"
+      color="primary"
+    >
+      Delete
+    </button>
+    <button
+      mat-raised-button
+      *ngIf="this.addMeal"
+      (click)="add()"
+      class="button"
+      color="primary"
+    >
+      Add
+    </button>
+  </mat-card-actions>
+</mat-card>
