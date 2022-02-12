@@ -19,6 +19,9 @@ export class MealSlotComponent implements OnInit {
   @Output() menuState = new EventEmitter();
   meal: String = null;
   type: String = null;
+  receipe: String = null
+  ingredients: String = null
+  image: String = null
   action: String = null;
   addMeal: boolean = null;
   showMenu: boolean = false;
@@ -32,15 +35,25 @@ export class MealSlotComponent implements OnInit {
     console.log(this.presentDay);
     console.log(this.fullMeal['name']);
     this.meal = this.fullMeal['name'];
-    // this.meal = 'empty';
+    this.ingredients = this.fullMeal['ingredients'];
+    this.receipe = this.fullMeal['receipe'];
+    this.image = this.fullMeal['image'];
+    this.type = this.fullMeal['type'];
     this.action = 'add';
-    this.type = null;
     this.addMeal = true;
   }
 
   public display() {
     if (this.meal != 'empty') {
-      const dialogRef = this.dialog.open(ReceipeDialogComponent);
+      const dialogRef = this.dialog.open(ReceipeDialogComponent, {
+        data:{
+          meal: this.meal,
+          type: this.type,
+          receipe: this.receipe,
+          ingredients: this.ingredients,
+          image: this.image
+        }
+      });
 
       dialogRef.afterClosed().subscribe((result) => {
         console.log(`Dialog result: ${result}`);
