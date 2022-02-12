@@ -1,0 +1,27 @@
+.day {
+  margin: auto;
+  width: 10%;
+  height: 80%;
+  text-align: center;
+  border-radius: 3%;
+  border: 5px solid;
+  border-color: blue;
+}
+
+.horizontal {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body{
+  background-image: url("https://www.circulaire-en-ligne.ca//wp-content/uploads/lasagnes-a-la-bolognaise-facile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

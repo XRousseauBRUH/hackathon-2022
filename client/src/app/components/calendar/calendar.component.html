@@ -1,1 +1,15 @@
-<p>calendar works!</p>
+<body>
+  <div class="horizontal">
+    <ng-container [value]="days" *ngFor="let day of days">
+      <mat-card class="day">
+        <mat-card-title>{{ day.day }}</mat-card-title>
+        <mat-card-title>{{ day.month }}</mat-card-title>
+        <mat-card-title>{{ day.year }}</mat-card-title>
+        <mat-card-title>{{ day.nbDayInWeek }}</mat-card-title>
+        <div [value]="mealLists" *ngFor="let meal of mealLists">
+          <app-meal-slot [meal]="meal.name"></app-meal-slot>
+        </div>
+      </mat-card>
+    </ng-container>
+  </div>
+</body>
