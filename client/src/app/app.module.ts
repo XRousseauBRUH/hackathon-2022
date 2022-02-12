@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './components/app/app.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
@@ -11,12 +12,10 @@ import { MealSlotComponent } from './components/meal-slot/meal-slot.component';
     AppComponent,
     CalendarComponent,
     MainPageComponent,
-    MealSlotComponent
+    MealSlotComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
