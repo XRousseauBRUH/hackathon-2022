@@ -5,28 +5,28 @@ const MEAL_FULL_LIST = [
     day: '0',
     meals: [
       {
-        type: 'Breakfast',
-        name: 'Lasagna',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Diner',
-        name: 'potatop',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Supper',
-        name: 'tomato',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
     ],
   },
@@ -34,28 +34,28 @@ const MEAL_FULL_LIST = [
     day: '1',
     meals: [
       {
-        type: 'LAERARqr',
-        name: 'Lasagna',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'eldfjkawelrhqw',
-        name: 'potatop',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'DQWL;EOHFQWELFH',
-        name: 'tomato',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
     ],
   },
@@ -63,28 +63,28 @@ const MEAL_FULL_LIST = [
     day: '2',
     meals: [
       {
-        type: 'Breakfast',
-        name: 'Lasagna',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Diner',
-        name: 'potatop',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Supper',
-        name: 'tomato',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
     ],
   },
@@ -92,28 +92,28 @@ const MEAL_FULL_LIST = [
     day: '3',
     meals: [
       {
-        type: 'Breakfast',
-        name: 'Lasagna',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Diner',
-        name: 'potatop',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Supper',
-        name: 'tomato',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
     ],
   },
@@ -121,28 +121,28 @@ const MEAL_FULL_LIST = [
     day: '4',
     meals: [
       {
-        type: 'Breakfast',
-        name: 'Lasagna',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Diner',
-        name: 'potatop',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Supper',
-        name: 'tomato',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
     ],
   },
@@ -150,28 +150,28 @@ const MEAL_FULL_LIST = [
     day: '5',
     meals: [
       {
-        type: 'Breakfast',
-        name: 'Lasagna',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Diner',
-        name: 'potatop',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Supper',
-        name: 'tomato',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
     ],
   },
@@ -179,33 +179,33 @@ const MEAL_FULL_LIST = [
     day: '6',
     meals: [
       {
-        type: 'Breakfast',
-        name: 'Lasagna',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Diner',
-        name: 'potatop',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
       {
-        type: 'Supper',
-        name: 'tomato',
-        recipe: 'full recipe balblabalbalblablab',
+        type: '',
+        name: 'Empty',
+        recipe: '',
         image:
-          'https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA=',
-        ingredients: 'potato,salad',
+          '',
+        ingredients: [],
       },
     ],
   },
 ];
-const API_KEY = '042989785b984833903aadc95dcfd187';
+const API_KEY = '78b5e2a1b717424580c03eddb8f8f82c';
 
 @Injectable({
   providedIn: 'root',
@@ -267,10 +267,10 @@ export class AddMealService {
     //     `&excludeIngredients=${searchParameters.get('excludeIng')}`
     //   );
     // }
-    let apiResponse;
+    // let apiResponse;
 
-    // let apiResponse = await this.sendRequest(baseUrl);
-
+    let apiResponse = await this.sendRequest(baseUrl);
+    console.log(apiResponse.sourceUrl);
     // sourceUrl
     // image
     // summary
@@ -279,7 +279,7 @@ export class AddMealService {
     // cuisines
     // id
     // extendedIngredients
-
+    // return Array.of(MEAL_FULL_LIST);
     return apiResponse;
   }
 
