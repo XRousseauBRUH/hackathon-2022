@@ -19,7 +19,9 @@ export class MealSlotComponent implements OnInit {
   @Output() menuState = new EventEmitter();
   meal: String = null;
   type: String = null;
-  action: String = null;
+  receipe: String = null
+  ingredients: String = null
+  image: String = null
   addMeal: boolean = null;
   showMenu: boolean = false;
   @Input() fullMeal: any;
@@ -28,19 +30,26 @@ export class MealSlotComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   public ngOnInit(): void {
-    console.log(this.fullMeal);
-    console.log(this.presentDay);
     console.log(this.fullMeal['name']);
     this.meal = this.fullMeal['name'];
-    // this.meal = 'empty';
-    this.action = 'add';
-    this.type = null;
+    this.ingredients = this.fullMeal['ingredients'];
+    this.receipe = this.fullMeal['receipe'];
+    this.image = this.fullMeal['image'];
+    this.type = this.fullMeal['type'];
     this.addMeal = true;
   }
 
   public display() {
     if (this.meal != 'empty') {
-      const dialogRef = this.dialog.open(ReceipeDialogComponent);
+      const dialogRef = this.dialog.open(ReceipeDialogComponent, {
+        data:{
+          meal: this.meal,
+          type: this.type,
+          receipe: this.receipe,
+          ingredients: this.ingredients,
+          image: this.image
+        }
+      });
 
       dialogRef.afterClosed().subscribe((result) => {
         console.log(`Dialog result: ${result}`);
