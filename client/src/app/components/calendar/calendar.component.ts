@@ -44,6 +44,7 @@ export class CalendarComponent implements OnInit {
   @Output() openSidebar = new EventEmitter();
 
   constructor(private AddMealService: AddMealService) {
+    this.AddMealService.searchMeal();
     this.mealLists = this.AddMealService.getWeek();
     this.mealLists = this.mealLists[0];
     this.days = [
