@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, SimpleChanges } from '@angular/core';
 import { AddMealService } from 'src/app/services/add-meal.service';
 
 const MAP_MONTH = new Map<number, string>([
@@ -44,7 +44,6 @@ export class CalendarComponent implements OnInit {
   @Output() openSidebar = new EventEmitter();
 
   constructor(private AddMealService: AddMealService) {
-    this.AddMealService.searchMeal();
     this.mealLists = this.AddMealService.getWeek();
     this.mealLists = this.mealLists[0];
     this.days = [

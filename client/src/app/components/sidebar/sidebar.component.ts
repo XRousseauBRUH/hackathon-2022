@@ -1,5 +1,8 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, EventEmitter, Output } from '@angular/core';
 //import { MatSidenav } from '@angular/material/sidenav';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { AddMealService } from 'src/app/services/add-meal.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,21 +11,27 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit, OnChanges {
   @Input() subMenuState;
-  showMenu: boolean = true
+  @Output() newMeal = new EventEmitter(); 
+  showMenu: boolean = true;
   request: string = ""
-
-  constructor() { }
+  cuisine: String[] = ["African","American", "British","Cajun","Chinese","Eastern European","European", "French","German","Vietnamese","Thai","Spanish", "Southern", "Nordic",  "Middle Eastern", "Mexican","Mediterranean",
+                      "Greek", "Indian", "Irish", "Italian", "Italian", "Jewish", "Korean", "Latin American"]
+  
+  constructor(private addMealService: AddMealService) { }
 
   ngOnInit(): void {
   }
 
   ngOnChanges(): void{
-    console.log("inside ngOnChanges with subMenuState: ",this.subMenuState );
     this.showMenu = this.subMenuState
   }
 
-  public onSubmit(){
-    console.log(this.request)
+  randomizeMeal() {
+    this.newMeal.emit(this.addMealService.searchMeal());
+  }
+
+  public onSubmit(request:string){
+    console.log(request)
   }
 
 }

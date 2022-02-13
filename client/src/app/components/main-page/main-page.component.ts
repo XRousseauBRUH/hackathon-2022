@@ -9,6 +9,7 @@ import { SidenavService } from 'src/app/services/sidenav.service';
 })
 export class MainPageComponent implements OnInit {
   openIt: boolean;
+  newMeal: any;
 
   ngOnInit(): void {}
 
@@ -18,6 +19,10 @@ export class MainPageComponent implements OnInit {
       'inside burgerClicked: pls. change showMenu to be:',
       this.openIt
     );
+  }
+
+  sendMealFun(evnt) {
+    this.newMeal = evnt;
   }
 }
  

@@ -1,12 +1,22 @@
 <mat-sidenav-container >
     <mat-sidenav  #sidenav mode="over" opened="true" [fixedInViewport]="true" [fixedTopGap]="75" *ngIf="showMenu" mat-disable-backdrop #start >
+        <mat-list>
+          <button mat-icon-button (click)="randomizeMeal()">Randomize Meal</button>
         <mat-form-field  appearance="fill">
             <mat-label>Search meal</mat-label>
-            <input matInput [(ngModel)]="request">
-            <button mat-icon-button (click)="onSubmit()">
+            <input matInput id="request" name="request" #request>
+            <button mat-icon-button (click)="onSubmit(request.value)">
                 <mat-icon>search</mat-icon>
             </button>
           </mat-form-field>
+          <!-- <mat-form-field>
+            <mat-label>Cuisine</mat-label>
+            <mat-select>
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+            </mat-select>
+        </mat-form-field> -->
+    </mat-list>
     </mat-sidenav>
 
 </mat-sidenav-container>

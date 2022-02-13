@@ -6,7 +6,7 @@
   <mat-card-actions>
     <button
       mat-raised-button
-      *ngIf="this.meal.length !== 0 &&  this.meal !== 'empty'"
+      *ngIf="this.meal.length !== 0 &&  this.meal !== 'Empty'"
       (click)="delete()"
       class="button"
       color="primary"
@@ -15,7 +15,7 @@
     </button>
     <button
       mat-raised-button
-      *ngIf="this.meal == 'empty'"
+      *ngIf="this.meal == 'Empty'"
       (click)="add()"
       class="button"
       color="primary"
